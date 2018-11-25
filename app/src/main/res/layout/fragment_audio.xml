@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        // Tab buttons
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonArtist"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ecf0f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/artists_tab" />
+
+            <Button
+                android:id="@+id/buttonAlbum"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ecf0f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/albums_tab" />
+
+            <Button
+                android:id="@+id/buttonSong"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ecf0f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/songs_tab" />
+
+            <Button
+                android:id="@+id/buttonPlaylist"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ecf0f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/playlists_tab" />
+
+        </LinearLayout>
+
+        // Artists ScrollView
+        <LinearLayout
+            android:id="@+id/scrollViewArtist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView7"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Artist Scrollview"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textStyle="bold" />-->
+
+            <ListView
+                android:id="@+id/grid_viewArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal"
+                android:padding="10dp"
+                android:stretchMode="columnWidth" />
+
+        </LinearLayout>
+
+        // Album ScrollView
+        <LinearLayout
+            android:id="@+id/scrollViewAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView8"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Album Scrollview"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textStyle="bold" />-->
+
+            <ListView
+                android:id="@+id/grid_viewAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal"
+                android:padding="10dp"
+                android:stretchMode="columnWidth" />
+
+        </LinearLayout>
+
+
+        // Song ScrollView
+        <LinearLayout
+            android:id="@+id/scrollViewSong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView9"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Song Scrollview"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textStyle="bold" />-->
+
+                <ListView
+                    android:id="@+id/grid_viewSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="fill_horizontal"
+                    android:padding="10dp"
+                    android:stretchMode="columnWidth" />
+
+        </LinearLayout>
+
+        // Playlist ScrollView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollViewPlaylist"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/testLInea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonAddPlaylist"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="#ecf0f1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/buttonDeletePlaylist"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="#ecf0f1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Delete" />
+
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView10"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Playlist Scrollview"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textStyle="bold" />-->
+
+            <ListView android:id="@+id/listViewPlaylists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:scrollbarStyle="outsideOverlay"
+                android:choiceMode="multipleChoice"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

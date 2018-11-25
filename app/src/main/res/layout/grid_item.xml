@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:padding="@dimen/gridItem_padding"
+    android:layout_margin="@dimen/gridItem_margin"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/empty"
+        android:background="@color/colorPrimaryDark">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/grid_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gridItem_textView_height"
+        android:layout_marginTop="-20dp"
+        android:layout_weight="0.76"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/gridItem_textView_paddingLeft"
+        android:paddingRight="@dimen/gridItem_textView_paddingRight"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/gridItem_textView_textSize"
+        android:textStyle="bold"></TextView>
+        //
+        //android:layout_marginTop="@dimen/gridItem_textView_marginTop"
+        //android:textAlignment="viewStart"
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_audio"
+            android:icon="@drawable/ic_audio"
+            android:title="@string/audio_menu" />
+        <item
+            android:id="@+id/menu_video"
+            android:icon="@drawable/ic_video"
+            android:title="@string/video_menu" />
+        <item
+            android:id="@+id/menu_explorer"
+            android:icon="@drawable/ic_explorer"
+            android:title="@string/explorer_menu" />
+        <!--<item-->
+            <!--android:id="@+id/menu_camera"-->
+            <!--android:icon="@drawable/menu_camera"-->
+            <!--android:title="@string/camera_menu" />-->
+        <!--<item-->
+            <!--android:id="@+id/menu_maps"-->
+            <!--android:icon="@drawable/menu_maps"-->
+            <!--android:title="@string/maps_menu" />-->
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings_menu" />
+    </group>
+
+</menu>

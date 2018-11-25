@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">EasyPlay</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    // Menu Strings
+    <string name="audio_menu">Audio</string>
+    <string name="video_menu">Video</string>
+    <string name="explorer_menu">Browse</string>
+    <string name="camera_menu">Camera</string>
+    <string name="maps_menu">Maps</string>
+    <string name="settings_menu">Settings</string>
+
+
+    // Tabs Strings
+    <string name="artists_tab">Artists</string>
+    <string name="albums_tab">Albums</string>
+    <string name="songs_tab">Songs</string>
+    <string name="playlists_tab">Playlists</string>
+
+    // MediaPlayer strings
+    <string name="title_activity_media_player_controller">MediaPlayerController</string>
+    <string name="btn_previous">Previous</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_play_pause">Play / Pause</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="unknown">Unknown</string>
+
+
+</resources>
